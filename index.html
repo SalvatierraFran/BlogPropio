@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <title>Blog Application</title>
+
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+</head>
+<body>
+
+    <div id="Loading">
+        <img id="GifEstilo" src="img/Loading.gif" alt="Acá debería estar el Loading.gif">
+    </div>
+
+    <div class="container" id="divCabecera">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <h1>Blog Application</h1><br>
+                <button onclick="MostrarForm()" class="btn-block btn btn-primary">New Post</button>
+            </div>
+        </div>
+
+        <div id="posteos">
+        </div>
+    </div>
+
+    <div class="container" id="divFormu">
+        <div class="row">
+            <div id="formu" class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <pre id="preEnunciado">
+                    Titulo de Post:<br>
+                    <input type="text" name="texttitle" id="texttitle"><br>
+                    Encabezado:<br>
+                    <input type="text" name="textheader" id="textheader"><br>
+                    Texto de Post:<br>
+                    <textarea rows="4" cols="50" name="posttext" id="posttext"></textarea>
+                    <input type="button" value="POST" onclick="enviarPost()" class="btn btn-primary pull-right">
+                    <input type="button" value="CANCEL" onclick="CancelarPost()" class="btn btn-danger pull-left">
+                </pre>
+            </div>
+        </div>
+    </div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+</body>
+</html>
